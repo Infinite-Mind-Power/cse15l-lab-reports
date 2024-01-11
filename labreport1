@@ -1,0 +1,17 @@
+
+Created a workspace and named it Lab1. Used the terminal on the edstem to run the hello.java file. 
+
+|-------------|---------------------------------------------------------------------|
+|Command Name |                         Command Description                         |
+|-------------|---------------------------------------------------------------------|
+| ls          |  Used this command to list the content of the workspace and         |
+|             |   other directories.                                                |
+|             |                                                                     |
+|-------------|---------------------------------------------------------------------|
+| cd          |  Used cd to open enter to lecture1 folder.                          |
+|-------------|---------------------------------------------------------------------|
+| cd ..       | Used cd .. to go back to the previous folder in the workspace.      |
+|-------------|---------------------------------------------------------------------|
+
+
+
