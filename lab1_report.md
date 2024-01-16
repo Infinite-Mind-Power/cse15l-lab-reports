@@ -16,7 +16,7 @@ Below is the things that I learned in this very first lab.
 | `cd`  `lecture1/`                        | Change Directory to lecture1 | Change to a specific directory.                  |
 | `cd`  `cd /home/lecture1/`               | - lectuer1   | Navigates to lecture1               |
 
-
+![Lab Image1](main/Screenshot 2024-01-15 at 23.43.49.png)
 
 
 
