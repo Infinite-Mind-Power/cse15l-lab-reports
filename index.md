@@ -17,26 +17,55 @@ Below is the things that I learned in this very first lab.
 | `cd`  `lecture1/`                        | Change Directory to lecture1 | Change to a specific directory.                  |
 | `cd`  `cd /home/lecture1/`               | - lectuer1   | Navigates to lecture1               |
 
-![Lab Image1](main/Screenshot 2024-01-15 at 23.43.49.png)
+#### Code Blocks:
+     [user@sahara ~]$ cd
+     [user@sahara ~]$
+      
+     [user@sahara ~]$ cd lecture1/
+     [user@sahara ~/lecture1]$ 
 
-<img src="main/Screenshot 2024-01-15 at 23.43.49.png" width="24"/>
-
-
-
+     [user@sahara ~]$ cd /home/lecture1
+     [user@sahara ~/lecture1]$ 
 
 
 ## `ls` (List Directory Contents)
 
-| Command                                 | Working Directory | Explanation                                       |
+| Command                                 | Directory | Explanation                                       |
 |-----------------------------------------|-------------------|---------------------------------------------------|
-| `ls`                                    | Current Directory | List contents of the current directory.          |
-| `ls /path/to/directory`                 | Current Directory | List contents of a specific directory.           |
-| `ls /path/to/file.txt` (Error)         | - /home/lecture1   | Error: Cannot list contents of a file.          |
+| `ls`                                    | Current Directory    | List contents of the current directory.           |
+| `ls lecture1/`  | lecture1 | List contents of the "lecture1" directory.                  |
+| `ls /home/lecture1/`  | `/home/lecture1`   | List contents of the "/home/lecture1" directory.               |
+
+##### Code Blocks:
+    [user@sahara ~]$ ls lecture1/
+    [user@sahara ~]$ ls
+    
+    lecture1
+    [user@sahara ~]$ cd lecture1/
+    
+    [user@sahara ~/lecture1]$ ls
+    Hello.class  Hello.java  messages  README
+
 
 ## `cat` (Concatenate and Display File Content)
 
 | Command                                 | Working Directory | Explanation                                       |
 |-----------------------------------------|-------------------|---------------------------------------------------|
-| `cat` (Error)                          | -                 | Error: Missing file argument.                   |
-| `cat /path/to/file.txt`                | Current Directory | Display the content of a text file.              |
-| `cat /path/to/directory` (Error)       | -                 | Error: Cannot display contents of a directory.   |
+| `cat`                                  | -                 | Error: Missing file argument.                   |
+| `cat /lecture1/messages/en-us.txt      | Current Directory | Display the content of a text file.              |
+| `cat /lecture1/messages/en-us.txt      | Destination path  | prints Hello World!                               |
+
+#### Code Blocks:
+    [user@sahara ~/lecture1]$ ls
+    Hello.class  Hello.java  messages  README
+  
+    [user@sahara ~/lecture1]$ cd messages
+    [user@sahara ~/lecture1/messages]$ ls
+  
+    en-us.txt  es-mx.txt  tr-tr.txt  zh-cn.txt
+    [user@sahara ~/lecture1/messages]$ cat en-us.txt
+    Hello World!
+
+
+
+
