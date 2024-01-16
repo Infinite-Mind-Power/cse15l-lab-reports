@@ -67,5 +67,19 @@ Below is the things that I learned in this very first lab.
     Hello World!
 
 
+![Doggy](doggy.jpg)
+
+
+
+
+
+
+
+
+
+
+    
+
+
 
 
