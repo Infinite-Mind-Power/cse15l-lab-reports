@@ -66,11 +66,11 @@ Below is the things that I learned in this very first lab.
     [user@sahara ~/lecture1/messages]$ cat en-us.txt
     Hello World!
 
+                                        
+
+
 
 ![Doggy](doggy.jpg)
-
-
-
 
 
 
