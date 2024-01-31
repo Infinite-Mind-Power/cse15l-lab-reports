@@ -1,8 +1,9 @@
--------------------------------------------------------------
+
 
 ## `ls` Command Example:
 
   ### No Argument:
+  
   
      [user@sahara ~]$ ls
      lecture1
@@ -18,6 +19,7 @@
   
   ### With Path as an Argument:
   
+  
      [user@sahara ~]$ ls /home/lecture1/messages
      en-us.txt  es-mx.txt  tr-tr.txt  zh-cn.txt
 
@@ -31,6 +33,7 @@
    Error: None.
    
    ### With File Path as an Argument:
+   
    
      [user@sahara ~]$ ls /lecture1/messages/Hello.java
      ls: cannot access '/lecture1/messages/Hello.java': No such file or directory
