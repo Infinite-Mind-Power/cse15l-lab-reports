@@ -117,7 +117,7 @@ I will provide example for each command and their outputs that we used during th
   
   Explanation: `cat` command ran and a black space with blinking pointer. The user info
   vanished and had to press `ctrl+C` to exit exit.
-  ![Terminal](/images/terminal.png)
+  ![Terminal](/main/terminal.png)
   
   Error: None but File path is requried to perform an action.
 
