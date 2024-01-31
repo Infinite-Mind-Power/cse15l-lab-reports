@@ -1,49 +1,60 @@
+-------------------------------------------------------
+
+## `cat` Command Example:
 
 
-## `ls` Command Example:
-
-  ### No Argument:
+  ##### No Argument:
   
-  
-     [user@sahara ~]$ ls
-     lecture1
+     [user@sahara ~]$ cat
+
      
      Working directory: /home
   
      [user@sahara ~]$ pwd
      /home
-     
-  Explanation: `ls` Lists the content of the directory with no change to working directory. 
   
-  Error: None. 
+  Explanation: `cat` command ran and a black space with blinking pointer. The user info
+  vanished and had to press `ctrl+C` to exit.
   
-  ### With Path as an Argument:
+  ![Terminal](/terminal.png)
+  
+  Error: None but File path is requried to perform an action.
+
   
   
-     [user@sahara ~]$ ls /home/lecture1/messages
-     en-us.txt  es-mx.txt  tr-tr.txt  zh-cn.txt
+  ##### With Path as an Argument:
+  
+     [user@sahara ~]$ cat /home/lecture1/messages
+     cat: /home/lecture1/messages: Is a directory  
 
      Working directory: Remains unchanged.
    
      [user@sahara ~/lecture1/messages]$ pwd
      /home
      
-   Explanation: `ls /home/lecture1/messages` lists the content of the given directory.
+   Explanation: `cat` command read Files path not a directory.
    
-   Error: None.
+   Error: cat: /home/lecture1/messages: Is a directory
    
-   ### With File Path as an Argument:
+  ##### With File Path as an Argument:
    
-   
-     [user@sahara ~]$ ls /lecture1/messages/Hello.java
-     ls: cannot access '/lecture1/messages/Hello.java': No such file or directory
+      [user@sahara /]$ cat /home/lecture1/messages/tr-tr.txt
+      Merhaba Dünya!
 
-     Working directory: remains unchanged.
+      Working directory: remains unchanged.
    
      [user@sahara ~]$ pwd
      /home
 
-   Explanation: `ls /lecture1/messages/Hello.java` does not perform any action with 
-   the given directory.
+   Explanation: `cat /home/lecture1/messages/tr-tr.txt` command directly reads the 
+   file that the path has been given to it.
    
-   Error: Cannot access. No such file or directory
+   Error: none.
+
+
+## Conclusion:
+
+This lab report covers the basic commands `cd` `ls` `cat` to navigate through system,
+using terminal and understanding this is very important for efficient work.
+
+     
