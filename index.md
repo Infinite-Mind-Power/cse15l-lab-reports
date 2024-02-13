@@ -1,36 +1,24 @@
-### What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 
-- **`HttpExchange exchange`:** This object contains all the details of a single HTTP request-response transaction. It includes the request URI, which has the path `/add-message` and the query parameters `s` (the message) and `user` (the username), for processing chat messages.
+### The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)
+  
+  The path for private ssh: `/Users/Stockmarket/.ssh/id_rsa`
+  
+ The path above is the absolute path for the private key.
 
-### How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+### The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)
+ The path for public ssh: `/Users/Stockmarket/.ssh/id_rsa.pub`
 
-- **Field:** `String chatHistory`
+ #### Screenshot of login to the the remote server of ieng6 without password using the public key:
+ 
+ ![Login without password](login.png)
 
-  - **Before First Request:** Initially, `chatHistory` starts as an empty string `""` which when we open the link the page shows the very
-      first screenshot.
 
-  - **After First Request** (`/add-message?s=Hello&user=eemami`):
-    - `chatHistory` is updated to `"eemami: Hello\n"`.
-  - **After Multiple Requests:** Each additional request further appends a message to `chatHistory` in the format `<user>: <message>\n`. Below is the example I used to execute the ChatServer.java
+ #### using the ls command to show the files created using ssh-keygen:
 
-    ```
-    eemami: Hello
-    eemami: Hello
-    eemami: Hello
-    eemami: Hello
-    Constantin: Hey Dude, What up?
-    eemami: Are you Constantin, What up?
-    eemami: Are you Constantin?
-    Constantin: Yeah I am the former Emperor of Rome CONSTANTIN!
-    eemami: You liar! You're a student in cse15L!
-    Constantin: So what?!
-    ```
+ ![ls command](lscommand.png) 
 
-    This shows the chat history being sequentially updated with each new message, formatted as `<user>: <message>` followed by a newline character.
 
-### Explanation:
+### What I have learned:
 
-- Upon receiving a chat message through the `/add-message` endpoint, the server's `handle` method is invoked with the `HttpExchange` object.
-- This method extracts the `user` and `s` (message) values from the query parameters of the request URI.
-- These values are then used to append the new message to the `chatHistory` field in the specified format.
-- The `chatHistory`, now containing the updated conversation, is included in the server's response, allowing users to view the ongoing chat history.
+One of the most important this I learned are the commands that I used to interact with computer using terminal, suach as 
+locating the directories, creating new directories. Another important skill is that we can run programs of any kind on a local server without using the computation power of the local computer or the storage, by downlading the main files to the remote server and running them remotely. Creating ssh-keys to enter the server without entering the password everytime is an interresting idea that I learned in this lab.
