@@ -88,3 +88,9 @@ Every time a user adds a message to the chat, this method is called to process t
  #### using the ls command to show the files created using ssh-keygen:
 
  ![ls command](lscommand.png) 
+
+
+### What I have learned:
+
+One of the most important this I learned are the commands that I used to interact with computer using terminal, suach as 
+locating the directories, creating new directories. Another important skill is that we can run programs of any kind on a local server without using the computation power of the local computer or the storage, by downlading the main files to the remote server and running them remotely. Creating ssh-keys to enter the server without entering the password everytime is an interresting idea that I learned in this lab.
