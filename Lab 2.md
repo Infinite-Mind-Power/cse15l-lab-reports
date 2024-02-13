@@ -71,5 +71,20 @@ Every time a user adds a message to the chat, this method is called to process t
 - These values are then used to append the new message to the `chatHistory` field in the specified format.
 - The `chatHistory`, now containing the updated conversation, is included in the server's response, allowing users to view the ongoing chat history.
 
+### The absolute path to the private key for your SSH key for logging into ieng6 (on your computer, an EdStem workspace, or on the home directory of the lab computer)
+  
+  The path for private ssh: `/Users/Stockmarket/.ssh/id_rsa`
+  
+ The path above is the absolute path for the private key.
+
+### The absolute path to the public key for your SSH key for logging into ieng6 (this is the one you copied to your account on ieng6, so it should be a path on ieng6's file system)
+ The path for public ssh: `/Users/Stockmarket/.ssh/id_rsa.pub`
+
+ #### Screenshot of login to the the remote server of ieng6 without password using the public key:
+ 
+ ![Login without password](login.png)
 
 
+ #### using the ls command to show the files created using ssh-keygen:
+
+ ![ls command](lscommand.png) 
