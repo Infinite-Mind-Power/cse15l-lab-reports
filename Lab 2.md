@@ -47,7 +47,7 @@ Every time a user adds a message to the chat, this method is called to process t
 
   - **After First Request** (`/add-message?s=Hello&user=eemami`):
     - `chatHistory` is updated to `"eemami: Hello\n"`.
-  - **After Multiple Requests:** Each additional request further appends a message to `chatHistory` in the format `<user>: <message>\n`. For instance, after processing a series of messages, `chatHistory` might look like this:
+  - **After Multiple Requests:** Each additional request further appends a message to `chatHistory` in the format `<user>: <message>\n`. Below is the example I used to execute the ChatServer.java
 
     ```
     eemami: Hello
@@ -64,20 +64,12 @@ Every time a user adds a message to the chat, this method is called to process t
 
     This shows the chat history being sequentially updated with each new message, formatted as `<user>: <message>` followed by a newline character.
 
-### :
+### Explanation:
 
-- Upon receiving a chat message through the `/add-message` endpoint, the server's `handle` method is triggered with the `HttpExchange` object, encapsulating the request's details.
+- Upon receiving a chat message through the `/add-message` endpoint, the server's `handle` method is invoked with the `HttpExchange` object.
 - This method extracts the `user` and `s` (message) values from the query parameters of the request URI.
 - These values are then used to append the new message to the `chatHistory` field in the specified format.
 - The `chatHistory`, now containing the updated conversation, is included in the server's response, allowing users to view the ongoing chat history.
 
-This ChatServer uses multiple requests to update the chathistory and adds new messages everytime its loaded using the implementation that is 
-provided in ChatServer.
 
-
-### Simplified Explanation
-
-Imagine the chat as a notebook where you're jotting down a conversation. Each spoken line gets written down with the speaker's name and their words. The "method" is like your hand and pen, the "arguments and values" are the speaker names and their messages, and the "chat history" is the notebook page that fills up as the conversation unfolds.
-
-Through this straightforward process, our server maintains a record of the conversation, keeping track of who said what and in the order it was said.
 
