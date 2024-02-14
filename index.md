@@ -5,7 +5,6 @@
 #### Here is the code:
 ![ChatServer.java code](ChatServer.png)
 
------------------
 
 ### Here is the ChatServer running:
 
