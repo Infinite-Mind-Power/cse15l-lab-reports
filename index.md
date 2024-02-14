@@ -23,7 +23,7 @@ The -r (or -R, which is equivalent) option enables recursive search, allowing gr
 
  Example 2: Recursively search for "error" in all files within the ./technical/ directory without the specific folder name.
  
- `grep -ri --include="*.md" "todo" ./technical/
+ `grep -ri --include="*.md" "todo" ./technical/`
 
  output:
 
