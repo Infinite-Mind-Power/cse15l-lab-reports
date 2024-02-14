@@ -12,6 +12,9 @@ Below is a simplified example of a chat server using Python's socket library:
 
 Below is a simplified example of a chat server using Python's `socket` library. This server listens for connections, receives messages from clients, and prints them to the console. In a real-world application, you would extend this with functionality to broadcast messages to other connected clients, handle errors, and secure the connection.
 
+
+
+
 ```python
 import socket
 import threading
@@ -36,7 +39,3 @@ def start_server():
 
 if __name__ == "__main__":
     start_server()
-
-
-  
-  
