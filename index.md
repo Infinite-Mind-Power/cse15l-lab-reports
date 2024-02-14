@@ -1,6 +1,5 @@
 ## Part 2
-### My favorite command is `grep`. The reason I chose it is becasue it is a powerfull 
-### tool which can: 
+### My favorite command is `grep`. The reason I chose it is becasue it is a powerfull tool which can: 
 
 - Searching text: grep can search one or more files for lines that contain a match to
 a specified pattern.
