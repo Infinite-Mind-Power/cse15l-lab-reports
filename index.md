@@ -15,27 +15,30 @@ Below is a simplified example of a chat server using Python's `socket` library. 
 
 
 
-```python
-import socket
-import threading
 
-def client_handler(connection):
-    while True:
+
+
+       ```python
+       import socket
+       import threading
+       
+       def client_handler(connection):
+       while True:
         message = connection.recv(1024)
         if not message:
             break
         print(f"Received: {message.decode()}")
         # Here you'd broadcast the message to other clients
-
-def start_server():
-    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind(('localhost', 12345))
-    server_socket.listen()
-    print("Server started, listening for connections...")
-    while True:
+        
+        def start_server():
+          server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+          server_socket.bind(('localhost', 12345))
+          server_socket.listen()
+        print("Server started, listening for connections...")
+        while True:
         connection, address = server_socket.accept()
         print(f"Connection from {address}")
         threading.Thread(target=client_handler, args=(connection,)).start()
 
-if __name__ == "__main__":
-    start_server()
+        if __name__ == "__main__":
+        start_server()
