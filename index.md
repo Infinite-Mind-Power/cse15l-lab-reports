@@ -18,7 +18,9 @@ The `reverseInPlace` method in the given `ArrayExamples` class contains a bug th
 
 
 
+
 ```java
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -32,6 +34,6 @@ class ArrayExamplesTest {
     }
 
 }
-
+```
 
 
