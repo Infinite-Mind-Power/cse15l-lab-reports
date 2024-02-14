@@ -13,7 +13,10 @@
 
 The `reverseInPlace` method in the given `ArrayExamples` class contains a bug that leads to incorrect behavior when attempting to reverse an array in-place. The bug is particularly evident with arrays of odd lengths.
 
+
 ### JUnit Test: Failure-Inducing Input
+
+
 
 ```java
 import org.junit.jupiter.api.Test;
