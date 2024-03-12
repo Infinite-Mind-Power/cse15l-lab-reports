@@ -10,18 +10,15 @@ First I generated a SSH key for github authentication.
 
 ![Step 3 Screenshot](ssh-key.png)
 
-## Cloning process
-After authentication of my ucsd account I was able to clone the repo.
-
-![Step 3](clone-process.png)
-
 ### Debugging Steps
 
 #### Step 4: Cloning the Repository
 
 Cloned the repository to start the debugging process.
 
-- **Keys Pressed**: `git clone <SSH URL>` `<enter>`
+![Step 3](clone-process.png)
+
+- **Keys Pressed**: `git clone <git@github.com:ucsd-cse15l-s23/lab7.git>` `<enter>`
 - **Effect**: Cloned my GitHub repository to the ieng6 account.
 
 ![Step 4 Screenshot](vim-example.png)
@@ -39,11 +36,14 @@ Ran the tests to demonstrate the failure and identify the bug.
 
 Opened the file in Vim, navigated to the bug, and edited the code.
 
-- **Keys Pressed**: `vim ListExamples.java` `<enter>` `/<buggy_method>` `<enter>` `i`
+- **Keys Pressed**: `vim ListExamples.java` `<enter>` `/<filter` `<enter>` <down> <down><down><down><down><down><down><down> and
+- <right> <right> <right> pressed x x
+- **Keys Pressed**: `/<merge` `<enter>` <down> <down><down><down><down><down><down><down> and
+- <right> <right> <right> pressed x 
 - **Code Change**: Changed `index1 += 1;` to `index2 += 1;` in the `merge` method's second `while` loop.
 - **Effect**: Fixed the logical error.
 
-![Step 6 Screenshot](Screenshot 2024-03-11 at 22.49.32.png)
+![Step 6 Screenshot](vim-example.png)
 
 #### Step 7: Running the Tests (After Fix)
 
@@ -58,7 +58,7 @@ Reran the tests to ensure the bug was fixed.
 
 Committed the fixed code and pushed the changes to GitHub.
 
-- **Keys Pressed**: `git add ListExamples.java` `<enter>` `git commit -m "Fix merge bug"` `<enter>` `git push` `<enter>`
+- **Keys Pressed**: `git add ListExamples.java` `<enter>` `git commit -m "Fixed bugs"` `<enter>` `git push` `<enter>`
 - **Effect**: Updated the repository with the fixed code.
 
 ![Step 8 Screenshot](git-commit.png)
