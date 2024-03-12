@@ -4,12 +4,16 @@
 ## Introduction
 
 This lab focused on debugging Java code using Vim and improving workflow efficiency through command line techniques. The main task involved fixing a bug in a method that merges two sorted lists.
+## SSH key:
 
-## Debugging Process
+First I generated a SSH key for github authentication.
 
-### Baseline Measurement
+![Step 3 Screenshot](ssh-key.png)
 
-Before beginning the debugging, I measured the time it took to complete the tasks without any efficiency techniques.
+## Cloning process
+After authentication of my ucsd account I was able to clone the repo.
+
+![Step 3](clone-process.png)
 
 ### Debugging Steps
 
@@ -20,7 +24,7 @@ Cloned the repository to start the debugging process.
 - **Keys Pressed**: `git clone <SSH URL>` `<enter>`
 - **Effect**: Cloned my GitHub repository to the ieng6 account.
 
-![Step 4 Screenshot](/path/to/your/screenshot4.png)
+![Step 4 Screenshot](vim-example.png)
 
 #### Step 5: Running the Tests (Before Fix)
 
@@ -29,7 +33,7 @@ Ran the tests to demonstrate the failure and identify the bug.
 - **Keys Pressed**: `<up>` `<enter>`
 - **Effect**: Tests failed, indicating a bug in the code.
 
-![Step 5 Screenshot](/path/to/your/screenshot5.png)
+![Step 5 Screenshot](test-failure.png)
 
 #### Step 6: Editing with Vim to Fix the Bug
 
@@ -39,7 +43,7 @@ Opened the file in Vim, navigated to the bug, and edited the code.
 - **Code Change**: Changed `index1 += 1;` to `index2 += 1;` in the `merge` method's second `while` loop.
 - **Effect**: Fixed the logical error.
 
-![Step 6 Screenshot](/path/to/your/screenshot6.png)
+![Step 6 Screenshot](Screenshot 2024-03-11 at 22.49.32.png)
 
 #### Step 7: Running the Tests (After Fix)
 
@@ -48,7 +52,7 @@ Reran the tests to ensure the bug was fixed.
 - **Keys Pressed**: `<up>` `<up>` `<enter>`
 - **Effect**: Tests succeeded, confirming the fix.
 
-![Step 7 Screenshot](/path/to/your/screenshot7.png)
+![Step 7 Screenshot](success-test.png)
 
 #### Step 8: Committing and Pushing the Changes
 
@@ -57,7 +61,7 @@ Committed the fixed code and pushed the changes to GitHub.
 - **Keys Pressed**: `git add ListExamples.java` `<enter>` `git commit -m "Fix merge bug"` `<enter>` `git push` `<enter>`
 - **Effect**: Updated the repository with the fixed code.
 
-![Step 8 Screenshot]()
+![Step 8 Screenshot](git-commit.png)
 
 ### Using Bash History
 
