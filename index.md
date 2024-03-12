@@ -57,37 +57,21 @@ Committed the fixed code and pushed the changes to GitHub.
 - **Keys Pressed**: `git add ListExamples.java` `<enter>` `git commit -m "Fix merge bug"` `<enter>` `git push` `<enter>`
 - **Effect**: Updated the repository with the fixed code.
 
-![Step 8 Screenshot](/path/to/your/screenshot8.png)
-
-#### Step 9: Documenting Time Improvement
-
-After implementing efficiency techniques, I noted an improvement in completion time.
-
-**Improved Time**: _[Insert your improved time here]_
-
-**Efficiency Gains**: _[Describe efficiency gains here]_
-
-![Step 9 Screenshot](/path/to/your/screenshot9.png)
-
-## Command Line Efficiencies Utilized
+![Step 8 Screenshot]()
 
 ### Using Bash History
 
-Utilized up/down arrows and Ctrl-R to quickly access previous commands.
+up/down arrows and Ctrl-R to quickly access previous commands.
 
 ### Using Tab for Autocompletion
 
-Leveraged the Tab key's autocomplete feature to speed up command typing.
+The Tab key really helped with autocompleting feature to speed up command typing.
 
 ### Keyboard Shortcuts
 
 Improved efficiency with shortcuts like Ctrl-U, Ctrl-K, Ctrl-A, Ctrl-E, Ctrl-W, and Alt-Left/Right.
 
-### Quick Copy/Paste
-
-Streamlined text selection and manipulation with mouse and keyboard shortcuts.
 
 ## Conclusion
-
-This lab enhanced my debugging skills in Vim and command line navigation efficiency. Applying these techniques allowed for a more streamlined development process, highlighting the importance of mastering the tools at our disposal.
+In this I learned how to use vim to edit and modify files on terminal and upload them into a git repository all on terminal.
 
