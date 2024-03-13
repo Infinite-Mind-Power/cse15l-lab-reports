@@ -49,3 +49,13 @@ For the Bash script, when passing arguments from Bash to Java, if your argument 
 ![Screenshot 6](reverarraybash.png)
 
 
+--------------------
+### Part two reflection,
+
+Ok! lets be honest. I really liked bash as much as it really bothered me sometimes. The most cool part was when I learned about vim. I did not know it before and the idea that I can modify, debug, run and do all sort of things to files on terminal was astonishing. I did not heared of it before and it truely showed how deep is the power of terminal, cmd, or shell. 
+It was great to meet you all and I appreciate for the time you took to teach me and others. Thanks!
+
+
+
+
+
