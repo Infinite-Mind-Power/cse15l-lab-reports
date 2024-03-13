@@ -31,7 +31,7 @@ It looks like you're on the right track suspecting the loop. When swapping eleme
 ## Follow-up Post by the Student:
 Thank you for the quick response! Here's the Bash script I use to compile and run my Java program and I noticed that when I pass an array like "1,2,3,4,5" to the script, it doesn't always return the expected reversed array. Can someone help me figure out what's going wrong?
 
-![Screenshot 4.1](buggbash.png)
+![Screenshot 4.1](buggybash.png)
 
 
 
