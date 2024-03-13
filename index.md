@@ -1,81 +1,44 @@
-
-# Lab Report 4 - Vim and Command Line Efficiency
-
-## Introduction
-
-This lab focused on debugging Java code using Vim and improving workflow efficiency through command line techniques. The main task involved fixing a bug in a method that merges two sorted lists.
-## SSH key:
-
-First I generated a SSH key for github authentication.
-
-![Step 3 Screenshot](ssh-key.png)
-
-### Debugging Steps
-
-#### Step 4: Cloning the Repository
-
-Cloned the repository to start the debugging process.
-
-![Step 3](clone-process.png)
-
-- **Keys Pressed**: `git clone <git@github.com:ucsd-cse15l-s23/lab7.git>` `<enter>`
-- **Effect**: Cloned my GitHub repository to the ieng6 account.
-
-![Step 4 Screenshot](vim-example.png)
-
-#### Step 5: Running the Tests (Before Fix)
-
-Ran the tests to demonstrate the failure and identify the bug.
-
-- **Keys Pressed**: `<up>` `<enter>`
-- **Effect**: Tests failed, indicating a bug in the code.
-
-![Step 5 Screenshot](test-failure.png)
-
-#### Step 6: Editing with Vim to Fix the Bug
-
-Opened the file in Vim, navigated to the bug, and edited the code.
-
-- **Keys Pressed**: `vim ListExamples.java` `<enter>` `/<filter` `<enter>` <down> <down><down><down><down><down><down><down> and
-- <right> <right> <right> pressed x x
-- **Keys Pressed**: `/<merge` `<enter>` <down> <down><down><down><down><down><down><down> and
-- <right> <right> <right> pressed x 
-- **Code Change**: Changed `index1 += 1;` to `index2 += 1;` in the `merge` method's second `while` loop.
-- **Effect**: Fixed the logical error.
-
-![Step 6 Screenshot](vim-example.png)
-
-#### Step 7: Running the Tests (After Fix)
-
-Reran the tests to ensure the bug was fixed.
-
-- **Keys Pressed**: `<up>` `<up>` `<enter>`
-- **Effect**: Tests succeeded, confirming the fix.
-
-![Step 7 Screenshot](success-test.png)
-
-#### Step 8: Committing and Pushing the Changes
-
-Committed the fixed code and pushed the changes to GitHub.
-
-- **Keys Pressed**: `git add ListExamples.java` `<enter>` `git commit -m "Fixed bugs"` `<enter>` `git push` `<enter>`
-- **Effect**: Updated the repository with the fixed code.
-
-![Step 8 Screenshot](git-commit.png)
-
-### Using Bash History
-
-up/down arrows and Ctrl-R to quickly access previous commands.
-
-### Using Tab for Autocompletion
-
-The Tab key really helped with autocompleting feature to speed up command typing.
-
-### Keyboard Shortcuts
-
-Improved efficiency with shortcuts like Ctrl-U, Ctrl-K, Ctrl-A, Ctrl-E, Ctrl-W, and Alt-Left/Right.
+# Lab Report 5 - Debugging an Array Reversal Program in Java
 
 
-## Conclusion
-In this I learned how to use vim to edit and modify files on terminal and upload them into a git repository all on terminal.
+
+### Trouble with Array Reversal Java Program
+
+
+Hello everyone,
+
+I'm having trouble with a Java program designed to reverse an array of integers inputted via command-line arguments. The program is supposed to split the input string into an array, reverse the array, and print the result. However, the output doesn't seem to reflect a correctly reversed array. Here's the Java code I'm using:
+
+#### The code:
+![Screenshot 1](originalcode.png)
+
+#### The output:
+![Screenshot 2](output.png)
+
+
+## Response from a TA:
+
+It looks like you're on the right track suspecting the loop. When swapping elements, you should consider how you're accessing the indices of the array. Remember, arrays in Java are zero-based. Can you try adjusting the indices during the swap and see if that fixes your issue? Please share your findings after you make the adjustment.
+### The bug is here:
+![Screenshot 3](buggy.png)
+
+### This might fix the code:
+![Screenshot 4](fixed.png)
+
+#### In the reverseArray method, adjust the indices used during the swap to correctly access the mirrored element in the array. Specifically, change:
+
+
+## Follow-up Post by the Student:
+Thank you for the quick response! Here's the Bash script I use to compile and run my Java program:
+
+Bash Script (compileAndRunReverseArray.sh):
+
+### This is the bash code I used:
+
+![Screenshot 5](bashcode.png)
+
+![Screenshot 6](reverarraybash.png)
+
+
+Thank you for the hint! I adjusted the indices in the swapping logic, and now the program works perfectly. Here's the corrected part of the code and the new output.
 
