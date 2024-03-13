@@ -29,16 +29,23 @@ It looks like you're on the right track suspecting the loop. When swapping eleme
 
 
 ## Follow-up Post by the Student:
-Thank you for the quick response! Here's the Bash script I use to compile and run my Java program:
+Thank you for the quick response! Here's the Bash script I use to compile and run my Java program and I noticed that when I pass an array like "1,2,3,4,5" to the script, it doesn't always return the expected reversed array. Can someone help me figure out what's going wrong?
 
-Bash Script (compileAndRunReverseArray.sh):
+![Screenshot 4.1](buggbash.png)
 
-### This is the bash code I used:
+
+
+## Response from TA:
+
+For the Bash script, when passing arguments from Bash to Java, if your argument includes special characters like commas, you might need to ensure they are correctly interpreted by enclosing the argument in quotes. Could you try modifying the way you pass $1 to java ReverseArray in your script and see if that resolves the issue?
+
+
+### This is the updated bash code I used and now everything works perfectly thanks!:
 
 ![Screenshot 5](bashcode.png)
 
+### Running and compiling the java program using bash reversearray.sh
+
 ![Screenshot 6](reverarraybash.png)
 
-
-Thank you for the hint! I adjusted the indices in the swapping logic, and now the program works perfectly. Here's the corrected part of the code and the new output.
 
